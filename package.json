@@ -1,0 +1,10 @@
+{
+    "name": "meron-abera-github-pages",
+    "version": "0.0.0",
+    "private": true,
+    "homepage": "https://meron-abera.github.io",
+    "devDependencies": {
+      "semantic-release": "^23.0.0"
+    }
+  }
+  
