@@ -8,9 +8,14 @@
   const navLinks = document.querySelectorAll(".nav-link");
   const rightNavLinks = document.querySelectorAll(".page-nav-right a:not(.page-nav-cta)");
   const allNavLinks = Array.from(navLinks).concat(Array.from(rightNavLinks));
-  const navIds = Array.from(navLinks).map(function (l) {
-    return l.getAttribute("href").slice(1);
-  });
+  const navIds = Array.from(rightNavLinks).length
+    ? Array.from(rightNavLinks).map(function (l) {
+        const href = l.getAttribute("href");
+        return href && href.startsWith("#") ? href.slice(1) : null;
+      }).filter(Boolean)
+    : Array.from(navLinks).map(function (l) {
+        return l.getAttribute("href").slice(1);
+      });
   const sections = document.querySelectorAll(
     navIds.map(function (id) {
       return "#" + id;
@@ -76,4 +81,20 @@
 
   // Initial check
   setActiveSection();
+
+  // Affiliations timeline: fade-in when section enters viewport
+  const affiliationsSection = document.querySelector(".affiliations-section");
+  if (affiliationsSection) {
+    const affiliationsObserver = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("in-view");
+          }
+        });
+      },
+      { threshold: 0.05, rootMargin: "0px 0px 0px 0px" }
+    );
+    affiliationsObserver.observe(affiliationsSection);
+  }
 })();
