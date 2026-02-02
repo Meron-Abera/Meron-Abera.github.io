@@ -1,10 +1,14 @@
 {
-    "name": "meron-abera-github-pages",
-    "version": "0.0.0",
-    "private": true,
-    "homepage": "https://meron-abera.github.io",
-    "devDependencies": {
-      "semantic-release": "^23.0.0"
-    }
+  "name": "meron-abera-github-pages",
+  "version": "0.0.0",
+  "private": true,
+  "homepage": "https://meron-abera.github.io",
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^9.2.0",
+    "@semantic-release/npm": "^10.0.0",
+    "semantic-release": "^23.0.0"
   }
+}
   
