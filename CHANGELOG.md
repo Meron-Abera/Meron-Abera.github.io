@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.1.0](https://github.com/Meron-Abera/Meron-Abera.github.io/compare/v1.0.0...v1.1.0) (2026-02-07)
+
+
+### Features
+
+* **skills:** add AI & ML skill card ([0e11694](https://github.com/Meron-Abera/Meron-Abera.github.io/commit/0e11694a4901088f8a55971b34e2f1382b5666be))
+
 # 1.0.0 (2026-02-02)
 
 
