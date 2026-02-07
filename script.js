@@ -36,31 +36,35 @@
     });
   });
 
-  // Update active nav link based on scroll position
+  // Update active nav link based on scroll position (document-relative, first match wins for overlapping sections)
   function setActiveSection() {
     const scrollY = window.pageYOffset;
-    let activeSet = false;
+    const offset = 120;
+    let activeId = null;
 
-    sections.forEach(function (section) {
-      const sectionTop = section.offsetTop - 120;
+    for (let i = 0; i < sections.length; i++) {
+      const section = sections[i];
+      const rect = section.getBoundingClientRect();
+      const sectionTop = rect.top + scrollY - offset;
       const sectionHeight = section.offsetHeight;
-      const sectionId = section.getAttribute("id");
 
       if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-        allNavLinks.forEach(function (link) {
-          link.classList.remove("active");
-          if (link.getAttribute("href") === "#" + sectionId) {
-            link.classList.add("active");
-            activeSet = true;
-          }
-        });
+        activeId = section.getAttribute("id");
+        break;
       }
-    });
+    }
 
-    if (!activeSet && sections.length > 0) {
+    if (activeId) {
       allNavLinks.forEach(function (link) {
         link.classList.remove("active");
-        if (link.getAttribute("href") === "#about") {
+        if (link.getAttribute("href") === "#" + activeId) {
+          link.classList.add("active");
+        }
+      });
+    } else if (sections.length > 0) {
+      allNavLinks.forEach(function (link) {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === "#hero") {
           link.classList.add("active");
         }
       });

@@ -14,7 +14,8 @@
         <!-- Right-side vertical navbar -->
         <nav class="page-nav-right" aria-label="Main navigation">
             <a href="#hero">Home</a>
-            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
             <a href="#projects">Projects</a>
             <a href="#affiliations">Affiliations</a>
             <a href="#interests">Interests</a>
@@ -52,8 +53,14 @@
                             <span class="hero-last-name">Shibiru</span>
                         </div>
                     </div>
-                    <div class="hero-right-content">
-                        <p class="hero-intro">My goal is to write clean, maintainable code that enhances the development process and makes coding enjoyable through structured and thoughtful practices.</p>
+                    <div class="hero-right-content" id="about">
+                        <p class="about-intro">Computer Science professional with a BSc in Software Engineering and an MSc in Computer Science. Experienced in full-stack development, mobile applications, and AI-powered systems. Focused on building scalable solutions and automating complex workflows.</p>
+                        <dl class="about-details">
+                            <div><dt>Name</dt><dd>Meron Shibiru</dd></div>
+                            <div><dt>Location</dt><dd>San Francisco, CA</dd></div>
+                            <div><dt>Email</dt><dd><a href="mailto:mshibiru@dons.usfca.edu">mshibiru@dons.usfca.edu</a></dd></div>
+                            <div><dt>Experience</dt><dd>2+ years</dd></div>
+                        </dl>
                         <a href="#projects" class="hero-cta">Portfolio</a>
                         <nav class="hero-social">
                             <a href="https://github.com/Meron-Abera" aria-label="GitHub">GitHub</a>
@@ -64,104 +71,60 @@
             </header>
 
             <div class="content-container glass-card">
-                <div class="about-skills-row">
-                    <!-- 1. About -->
-                    <section id="about" class="section about-section" data-nav="about">
-                        <h2>About</h2>
-                        <p class="about-intro">Computer Science professional with a BSc in Software Engineering and an MSc in Computer Science. Experienced in full-stack development, mobile applications, and AI-powered systems. Focused on building scalable solutions and automating complex workflows.</p>
-                        <dl class="about-details">
-                            <div><dt>Name</dt><dd>Meron Shibiru</dd></div>
-                            <div><dt>Location</dt><dd>San Francisco, CA</dd></div>
-                            <div><dt>Email</dt><dd><a href="mailto:mshibiru@dons.usfca.edu">mshibiru@dons.usfca.edu</a></dd></div>
-                            <div><dt>Experience</dt><dd>2+ years</dd></div>
-                        </dl>
-                    </section>
-
-                    <!-- 2. Skills -->
+                <div class="content-pad">
                     <section id="skills" class="section skills-section" data-nav="skills">
-                    <h2>Skills</h2>
-                    <div class="skills-grid">
-                        <article class="skill-card glass-card">
-                            <h4 class="skill-card-title">Tech Stack</h4>
-                            <ul class="skill-card-list">
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JavaScript</li>
-                                <li>TypeScript</li>
-                                <li>React</li>
-                                <li>Next.js</li>
-                                <li>Express</li>
-                                <li>Node.js</li>
-                                <li>MongoDB</li>
-                                <li>PostgreSQL</li>
-                                <li>PHP</li>
-                            </ul>
-                        </article>
-                        <article class="skill-card glass-card">
-                            <h4 class="skill-card-title">Front-End</h4>
-                            <ul class="skill-card-list">
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JavaScript</li>
-                                <li>TypeScript</li>
-                                <li>React</li>
-                                <li>Next.js</li>
-                            </ul>
-                        </article>
-                        <article class="skill-card glass-card">
-                            <h4 class="skill-card-title">Back-End</h4>
-                            <ul class="skill-card-list">
-                                <li>Java</li>
-                                <li>Python</li>
-                                <li>C++</li>
-                                <li>Kotlin</li>
-                                <li>Node.js</li>
-                                <li>Express.js</li>
-                                <li>Spring Boot</li>
-                                <li>Django</li>
-                                <li>Laravel</li>
-                            </ul>
-                        </article>
-                        <article class="skill-card glass-card">
-                            <h4 class="skill-card-title">UI & Styling</h4>
-                            <ul class="skill-card-list">
-                                <li>CSS</li>
-                                <li>HTML</li>
-                                <li>Responsive Design</li>
-                            </ul>
-                        </article>
-                        <article class="skill-card glass-card">
-                            <h4 class="skill-card-title">Database</h4>
-                            <ul class="skill-card-list">
-                                <li>SQL</li>
-                                <li>PostgreSQL</li>
-                                <li>MongoDB</li>
-                            </ul>
-                        </article>
-                        <article class="skill-card glass-card">
-                            <h4 class="skill-card-title">AI & ML</h4>
-                            <ul class="skill-card-list">
-                                <li>PyTorch</li>
-                                <li>TensorFlow</li>
-                                <li>Scikit-learn</li>
-                                <li>NLP</li>
-                                <li>Computer Vision</li>
-                                <li>OCR</li>
-                                <li>CNN</li>
-                                <li>Statistical Modeling</li>
-                            </ul>
-                        </article>
-                        <article class="skill-card glass-card">
-                            <h4 class="skill-card-title">RestAPI / APIs</h4>
-                            <ul class="skill-card-list">
-                                <li>AWS</li>
-                                <li>Git</li>
-                                <li>GitHub</li>
-                                <li>CI/CD</li>
-                                <li>Agile</li>
-                            </ul>
-                        </article>
-                    </div>
+                        <h2>Skills</h2>
+                        <div class="skills-rows">
+                            <div class="skills-row-group">
+                                <span class="skills-row-label">Programming languages</span>
+                                <div class="skills-cards-wrap">
+                                    <span class="skill-card">HTML</span>
+                                    <span class="skill-card">CSS</span>
+                                    <span class="skill-card">JAVASCRIPT</span>
+                                    <span class="skill-card">TYPESCRIPT</span>
+                                    <span class="skill-card">PYTHON</span>
+                                    <span class="skill-card">JAVA</span>
+                                    <span class="skill-card">C++</span>
+                                    <span class="skill-card">KOTLIN</span>
+                                    <span class="skill-card">PHP</span>
+                                    <span class="skill-card">SQL</span>
+                                </div>
+                            </div>
+                            <div class="skills-row-group">
+                                <span class="skills-row-label">Frameworks & tools</span>
+                                <div class="skills-cards-wrap">
+                                    <span class="skill-card">REACT</span>
+                                    <span class="skill-card">NEXT.JS</span>
+                                    <span class="skill-card">NODE.JS</span>
+                                    <span class="skill-card">EXPRESS</span>
+                                    <span class="skill-card">DJANGO</span>
+                                    <span class="skill-card">LARAVEL</span>
+                                    <span class="skill-card">SPRING BOOT</span>
+                                    <span class="skill-card">MONGODB</span>
+                                    <span class="skill-card">POSTGRESQL</span>
+                                    <span class="skill-card">GIT</span>
+                                    <span class="skill-card">GITHUB</span>
+                                    <span class="skill-card">AWS</span>
+                                    <span class="skill-card">DOCKER</span>
+                                    <span class="skill-card">FIGMA</span>
+                                    <span class="skill-card">CI/CD</span>
+                                    <span class="skill-card">AGILE</span>
+                                </div>
+                            </div>
+                            <div class="skills-row-group">
+                                <span class="skills-row-label">AI & ML</span>
+                                <div class="skills-cards-wrap">
+                                    <span class="skill-card">TENSORFLOW</span>
+                                    <span class="skill-card">PYTORCH</span>
+                                    <span class="skill-card">SCIKIT-LEARN</span>
+                                    <span class="skill-card">NLP</span>
+                                    <span class="skill-card">COMPUTER VISION</span>
+                                    <span class="skill-card">OCR</span>
+                                    <span class="skill-card">CNN</span>
+                                    <span class="skill-card">STATISTICAL MODELING</span>
+                                </div>
+                            </div>
+                        </div>
                     </section>
                 </div>
             </div>
@@ -315,7 +278,7 @@
                         </div>
                         <div class="journey-section">
                             <h2 class="journey-title">Journey</h2>
-                            <p class="journey-intro">From backend intern to full-stack developer, I've built production systems across healthcare, telecom, and edtech. I focus on scalable APIs, AI-powered workflows, and reducing manual work through automation—whether optimizing payment gateways or extracting data from handwritten prescriptions.</p>
+                            <p class="journey-intro">From backend intern to full-stack developer, I've built production systems across healthcare, telecom, and edtech. I focus on scalable APIs, AI-powered workflows, and reducing manual work through automation, whether optimizing payment gateways or extracting data from handwritten prescriptions.</p>
                             <div class="journey-cards">
                                 <div class="journey-card">
                                     <span class="journey-year">2025</span>
@@ -531,7 +494,6 @@
                 <!-- Interests -->
                 <section id="interests" class="section interests-section" data-nav="interests">
                     <h2>Interests</h2>
-                    <p class="interests-subtitle">Beyond code — what I'm curious about.</p>
                     <div class="interests-grid">
                         <article class="interest-card glass-card">
                             <h4 class="interest-card-title">Technology</h4>
