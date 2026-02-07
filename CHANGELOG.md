@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.2.0](https://github.com/Meron-Abera/Meron-Abera.github.io/compare/v1.1.0...v1.2.0) (2026-02-07)
+
+
+### Features
+
+* redesign skills, move about into hero, fix nav highlight ([db76ffb](https://github.com/Meron-Abera/Meron-Abera.github.io/commit/db76ffb823824786228eeccdc157bfbddbf76584))
+
 # [1.1.0](https://github.com/Meron-Abera/Meron-Abera.github.io/compare/v1.0.0...v1.1.0) (2026-02-07)
 
 
