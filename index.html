@@ -1,448 +1,680 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meron Shibiru | Software Engineer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <div class="page-wrapper">
-        <!-- Right-side vertical navbar -->
-        <nav class="page-nav-right" aria-label="Main navigation">
-            <a href="#hero">Home</a>
-            <a href="#skills">Skills</a>
-            <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
-            <a href="#affiliations">Affiliations</a>
-            <a href="#interests">Interests</a>
-            <a href="#contact">Contact</a>
-            <!-- <a href="#contact" class="page-nav-cta">Let's Talk</a> -->
-        </nav>
+      <!-- Right-side vertical navbar -->
+      <nav class="page-nav-right" aria-label="Main navigation">
+        <a href="#hero">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#affiliations">Affiliations</a>
+        <a href="#interests">Interests</a>
+        <a href="#contact">Contact</a>
+        <!-- <a href="#contact" class="page-nav-cta">Let's Talk</a> -->
+      </nav>
 
-
-        <!-- Main content -->
-        <div class="content">
-            <!-- Hero: rectangular image with text overlays -->
-            <header id="hero" class="hero">
-                <div class="hero-bg" aria-hidden="true">
-                    <span class="hero-blob hero-blob-1"></span>
-                    <span class="hero-blob hero-blob-2"></span>
-                    <span class="hero-blob hero-blob-3"></span>
-                    <span class="hero-blob hero-blob-4"></span>
-                    <span class="hero-blob hero-blob-5"></span>
-                    <span class="hero-blob hero-blob-6"></span>
-                </div>
-                <div class="hero-row">
-                    <div class="hero-image-wrapper">
-                        <div class="hero-developer-overlay">
-                            <span class="hero-software">Software</span>
-                            <span class="hero-divider"></span>
-                            <span class="hero-developer">Developer</span>
-                        </div>
-                        <div class="hero-image-container">
-                            <img src="formal-photo.png" alt="Meron Shibiru" class="hero-image">
-                            <div class="hero-image-overlay"></div>
-                        </div>
-                        <div class="hero-name-block">
-                            <span class="hero-first-name">Meron</span>
-                            <span class="hero-name-divider"></span>
-                            <span class="hero-last-name">Shibiru</span>
-                        </div>
-                    </div>
-                    <div class="hero-right-content" id="about">
-                        <p class="about-intro">Computer Science professional with a BSc in Software Engineering and an MSc in Computer Science. Experienced in full-stack development, mobile applications, and AI-powered systems. Focused on building scalable solutions and automating complex workflows.</p>
-                        <dl class="about-details">
-                            <div><dt>Name</dt><dd>Meron Shibiru</dd></div>
-                            <div><dt>Location</dt><dd>San Francisco, CA</dd></div>
-                            <div><dt>Email</dt><dd><a href="mailto:mshibiru@dons.usfca.edu">mshibiru@dons.usfca.edu</a></dd></div>
-                            <div><dt>Experience</dt><dd>2+ years</dd></div>
-                        </dl>
-                        <a href="#projects" class="hero-cta">Portfolio</a>
-                        <nav class="hero-social">
-                            <a href="https://github.com/Meron-Abera" aria-label="GitHub">GitHub</a>
-                            <a href="https://www.linkedin.com/in/meron-a-shibiru/" aria-label="LinkedIn">LinkedIn</a>
-                        </nav>
-                    </div>
-                </div>
-            </header>
-
-            <div class="content-container glass-card">
-                <div class="content-pad">
-                    <section id="skills" class="section skills-section" data-nav="skills">
-                        <h2>Skills</h2>
-                        <div class="skills-rows">
-                            <div class="skills-row-group">
-                                <span class="skills-row-label">Programming languages</span>
-                                <div class="skills-cards-wrap">
-                                    <span class="skill-card">HTML</span>
-                                    <span class="skill-card">CSS</span>
-                                    <span class="skill-card">JAVASCRIPT</span>
-                                    <span class="skill-card">TYPESCRIPT</span>
-                                    <span class="skill-card">PYTHON</span>
-                                    <span class="skill-card">JAVA</span>
-                                    <span class="skill-card">C++</span>
-                                    <span class="skill-card">KOTLIN</span>
-                                    <span class="skill-card">PHP</span>
-                                    <span class="skill-card">SQL</span>
-                                </div>
-                            </div>
-                            <div class="skills-row-group">
-                                <span class="skills-row-label">Frameworks & tools</span>
-                                <div class="skills-cards-wrap">
-                                    <span class="skill-card">REACT</span>
-                                    <span class="skill-card">NEXT.JS</span>
-                                    <span class="skill-card">NODE.JS</span>
-                                    <span class="skill-card">EXPRESS</span>
-                                    <span class="skill-card">DJANGO</span>
-                                    <span class="skill-card">LARAVEL</span>
-                                    <span class="skill-card">SPRING BOOT</span>
-                                    <span class="skill-card">MONGODB</span>
-                                    <span class="skill-card">POSTGRESQL</span>
-                                    <span class="skill-card">GIT</span>
-                                    <span class="skill-card">GITHUB</span>
-                                    <span class="skill-card">AWS</span>
-                                    <span class="skill-card">DOCKER</span>
-                                    <span class="skill-card">FIGMA</span>
-                                    <span class="skill-card">CI/CD</span>
-                                    <span class="skill-card">AGILE</span>
-                                </div>
-                            </div>
-                            <div class="skills-row-group">
-                                <span class="skills-row-label">AI & ML</span>
-                                <div class="skills-cards-wrap">
-                                    <span class="skill-card">TENSORFLOW</span>
-                                    <span class="skill-card">PYTORCH</span>
-                                    <span class="skill-card">SCIKIT-LEARN</span>
-                                    <span class="skill-card">NLP</span>
-                                    <span class="skill-card">COMPUTER VISION</span>
-                                    <span class="skill-card">OCR</span>
-                                    <span class="skill-card">CNN</span>
-                                    <span class="skill-card">STATISTICAL MODELING</span>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
+      <!-- Main content -->
+      <div class="content">
+        <!-- Hero: rectangular image with text overlays -->
+        <header id="hero" class="hero">
+          <div class="hero-bg" aria-hidden="true">
+            <span class="hero-blob hero-blob-1"></span>
+            <span class="hero-blob hero-blob-2"></span>
+            <span class="hero-blob hero-blob-3"></span>
+            <span class="hero-blob hero-blob-4"></span>
+            <span class="hero-blob hero-blob-5"></span>
+            <span class="hero-blob hero-blob-6"></span>
+          </div>
+          <div class="hero-row">
+            <div class="hero-image-wrapper">
+              <div class="hero-developer-overlay">
+                <span class="hero-software">Software</span>
+                <span class="hero-divider"></span>
+                <span class="hero-developer">Developer</span>
+              </div>
+              <div class="hero-image-container">
+                <img
+                  src="formal-photo.png"
+                  alt="Meron Shibiru"
+                  class="hero-image"
+                />
+                <div class="hero-image-overlay"></div>
+              </div>
+              <div class="hero-name-block">
+                <span class="hero-first-name">Meron</span>
+                <span class="hero-name-divider"></span>
+                <span class="hero-last-name">Shibiru</span>
+              </div>
             </div>
+            <div class="hero-right-content" id="about">
+              <p class="about-intro">
+                I have a background in software engineering and a master’s
+                degree in computer science. I’ve worked on full-stack
+                development, mobile applications, and AI-driven systems, and I
+                enjoy building scalable solutions that simplify complex
+                workflows.
+              </p>
 
-            <main>
-                <!-- 3. Experience -->
-                <section id="experience" class="section experience-section" data-nav="experience">
-                    <div class="experience-container glass-card">
-                        <div class="experience-bg" aria-hidden="true">
-                            <span class="experience-speck experience-speck-1"></span>
-                            <span class="experience-speck experience-speck-2"></span>
-                            <span class="experience-speck experience-speck-3"></span>
-                            <span class="experience-speck experience-speck-4"></span>
-                            <span class="experience-speck experience-speck-5"></span>
-                            <span class="experience-speck experience-speck-6"></span>
-                            <span class="experience-speck experience-speck-7"></span>
-                            <span class="experience-speck experience-speck-8"></span>
-                            <span class="experience-speck experience-speck-9"></span>
-                            <span class="experience-speck experience-speck-10"></span>
-                            <span class="experience-speck experience-speck-11"></span>
-                            <span class="experience-speck experience-speck-12"></span>
-                            <span class="experience-speck experience-speck-13"></span>
-                            <span class="experience-speck experience-speck-14"></span>
-                            <span class="experience-speck experience-speck-15"></span>
-                            <span class="experience-speck experience-speck-16"></span>
-                            <span class="experience-speck experience-speck-17"></span>
-                            <span class="experience-speck experience-speck-18"></span>
-                            <span class="experience-speck experience-speck-19"></span>
-                            <span class="experience-speck experience-speck-20"></span>
-                            <span class="experience-speck experience-speck-21"></span>
-                            <span class="experience-speck experience-speck-22"></span>
-                            <span class="experience-speck experience-speck-23"></span>
-                            <span class="experience-speck experience-speck-24"></span>
-                        </div>
-                        <div class="work-section">
-                            <h2 class="work-title">Work Experience</h2>
-                            <div class="work-entries">
-                                <article class="work-entry">
-                                    <div class="work-col work-dates">
-                                        <span class="work-date-range">Aug 2025 – Present</span>
-                                        <span class="work-duration">Ongoing</span>
-                                    </div>
-                                    <div class="work-col work-company">
-                                        <strong>USFMobile.</strong>
-                                        <span>San Francisco, CA</span>
-                                    </div>
-                                    <div class="work-col work-details">
-                                        <strong>Software Developer</strong>
-                                        <span class="work-tech">React, TypeScript, Node.js, REST APIs</span>
-                                        <ul class="work-bullets">
-                                            <li>Implemented full-stack features for a production university mobile platform supporting 8,000+ students across academic and administrative services.</li>
-                                            <li>Integrated and refactored backend services and APIs, participating in code reviews to reduce duplicated client logic and improve deployment reliability.</li>
-                                        </ul>
-                                    </div>
-                                </article>
-                                <article class="work-entry">
-                                    <div class="work-col work-dates">
-                                        <span class="work-date-range">June 2024 – May 2025</span>
-                                        <span class="work-duration">1 Year</span>
-                                    </div>
-                                    <div class="work-col work-company">
-                                        <strong>Huawei Technologies PLC.</strong>
-                                        <span>Addis Ababa</span>
-                                    </div>
-                                    <div class="work-col work-details">
-                                        <strong>Software Engineer</strong>
-                                        <span class="work-tech">Spring Boot, Java, REST APIs, MySQL, Docker</span>
-                                        <ul class="work-bullets">
-                                            <li>Shipped Spring Boot integration APIs for Ethio Telecom's national network, supporting delivery and optimization of cloud and networking products.</li>
-                                            <li>Enhanced back-end services for large-scale telecom infrastructure, improving API throughput and system latency, enabling 1.5x faster rollout.</li>
-                                            <li>Optimized payment-gateway endpoints, increasing daily transaction volume by 3x and reducing settlement time by ~2 days.</li>
-                                        </ul>
-                                    </div>
-                                </article>
-                                <article class="work-entry">
-                                    <div class="work-col work-dates">
-                                        <span class="work-date-range">Oct 2023 – April 2025</span>
-                                        <span class="work-duration">1 Year 7 Months</span>
-                                    </div>
-                                    <div class="work-col work-company">
-                                        <strong>TamaCares.</strong>
-                                        <span>Alexandria, VA (Remote)</span>
-                                    </div>
-                                    <div class="work-col work-details">
-                                        <strong>Software Developer (Part-Time)</strong>
-                                        <span class="work-tech">Next.js, PostgreSQL, Express, AI/NLP, OCR</span>
-                                        <ul class="work-bullets">
-                                            <li>Deployed full-stack web app to digitalize patient prescription requests, reducing paperwork by 80% with ~95% test coverage.</li>
-                                            <li>Engineered CRM analytics dashboard for order management, reducing order lifetime by 66% and cutting CRM license costs by 100%.</li>
-                                            <li>Integrated AI agents, NLP, and finetuned OCR models to extract medical details from handwritten prescriptions with 78% accuracy.</li>
-                                        </ul>
-                                    </div>
-                                </article>
-                                <article class="work-entry">
-                                    <div class="work-col work-dates">
-                                        <span class="work-date-range">Dec 2023 – May 2024</span>
-                                        <span class="work-duration">6 Months</span>
-                                    </div>
-                                    <div class="work-col work-company">
-                                        <strong>Venuine.</strong>
-                                        <span>Remote</span>
-                                    </div>
-                                    <div class="work-col work-details">
-                                        <strong>Freelance Event Management Developer</strong>
-                                        <span class="work-tech">React, Node.js, Stripe, PostgreSQL</span>
-                                        <ul class="work-bullets">
-                                            <li>Built venue reservation and event management system with real-time availability tracking, event hosting, and role-based access.</li>
-                                            <li>Integrated Stripe for payment processing and added self-serve settings dashboard, reducing manual admin tasks.</li>
-                                            <li>Designed double-booking-proof systems for long-term scalability.</li>
-                                        </ul>
-                                    </div>
-                                </article>
-                                <article class="work-entry">
-                                    <div class="work-col work-dates">
-                                        <span class="work-date-range">June 2024 – Sep 2024</span>
-                                        <span class="work-duration">4 Months</span>
-                                    </div>
-                                    <div class="work-col work-company">
-                                        <strong>Huawei Technologies PLC.</strong>
-                                        <span>Addis Ababa</span>
-                                    </div>
-                                    <div class="work-col work-details">
-                                        <strong>Software Delivery Engineer (Intern)</strong>
-                                        <span class="work-tech">Java, Telecom Systems, Cloud</span>
-                                        <ul class="work-bullets">
-                                            <li>Interned on Software Maintenance Team supporting Ethio Telecom's core systems.</li>
-                                            <li>Implemented customized software solutions for telecom clients and optimized system integrations.</li>
-                                        </ul>
-                                    </div>
-                                </article>
-                                <article class="work-entry">
-                                    <div class="work-col work-dates">
-                                        <span class="work-date-range">July 2023 – Oct 2023</span>
-                                        <span class="work-duration">4 Months</span>
-                                    </div>
-                                    <div class="work-col work-company">
-                                        <strong>Micro Sun and Solution P.L.C.</strong>
-                                        <span>Addis Ababa</span>
-                                    </div>
-                                    <div class="work-col work-details">
-                                        <strong>Backend Developer Intern</strong>
-                                        <span class="work-tech">Node.js, Chapa API, PostgreSQL</span>
-                                        <ul class="work-bullets">
-                                            <li>Led the development of a tender-matching platform using Laravel and React.js, resulting in a 3x increase in operational efficiency and simplified platform oversight.</li>
-                                            <li>Integrated manual payment system with Chapa to automate transactions and reduce processing times by ⅔.</li>
-                                            <li>Optimized API endpoints using advanced data structures, enhancing interoperability between distributed components.</li>
-                                        </ul>
-                                    </div>
-                                </article>
-                            </div>
-                        </div>
-                        <div class="journey-section">
-                            <h2 class="journey-title">Journey</h2>
-                            <p class="journey-intro">From backend intern to full-stack developer, I've built production systems across healthcare, telecom, and edtech. I focus on scalable APIs, AI-powered workflows, and reducing manual work through automation, whether optimizing payment gateways or extracting data from handwritten prescriptions.</p>
-                            <div class="journey-cards">
-                                <div class="journey-card">
-                                    <span class="journey-year">2025</span>
-                                    <strong class="journey-role">{ Software Developer, USF }</strong>
-                                    <p>Leading full-stack development for a university mobile platform serving 8,000+ students. Refactoring backend services and APIs to improve deployment reliability and reduce duplicated logic across the platform.</p>
-                                </div>
-                                <div class="journey-card">
-                                    <span class="journey-year">2023</span>
-                                    <strong class="journey-role">{ Backend Intern → Full-Stack Developer }</strong>
-                                    <p>Started at Micro Sun building tender-matching algorithms and payment integrations. Joined TamaCares part-time to ship a Next.js/Postgres app and AI-powered OCR pipeline, cutting prescription paperwork by 80%.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+              <dl class="about-details">
+                <div>
+                  <dt>Name</dt>
+                  <dd>Meron Shibiru</dd>
+                </div>
+                <div>
+                  <dt>Location</dt>
+                  <dd>San Francisco, CA</dd>
+                </div>
+                <div>
+                  <dt>Email</dt>
+                  <dd>
+                    <a href="mailto:mshibiru@dons.usfca.edu"
+                      >mshibiru@dons.usfca.edu</a
+                    >
+                  </dd>
+                </div>
+                <div>
+                  <dt>Experience</dt>
+                  <dd>2+ years</dd>
+                </div>
+              </dl>
+              <a href="#projects" class="hero-cta">Portfolio</a>
+              <nav class="hero-social">
+                <a href="https://github.com/Meron-Abera" aria-label="GitHub"
+                  >GitHub</a
+                >
+                <a
+                  href="https://www.linkedin.com/in/meron-a-shibiru/"
+                  aria-label="LinkedIn"
+                  >LinkedIn</a
+                >
+              </nav>
+            </div>
+          </div>
+        </header>
 
-                <!-- 5. Projects -->
-                <section id="projects" class="section projects-section" data-nav="projects">
-                    <h2>Projects</h2>
-                    <p class="projects-subtitle">Discover how ideas become impactful solutions.</p>
-                    <div class="projects-gallery">
-                        <article class="project-card">
-                            <div class="project-card-image">
-                                <img src="Images/smartmarket.jpg" alt="Smart Farm Marketplace" />
-                            </div>
-                            <div class="project-card-body">
-                                <span class="project-label">Featured Project</span>
-                                <h3 class="project-title">Smart Farm Marketplace</h3>
-                                <p class="project-desc">Computer vision system processing smart-scale sensor data to identify produce and sync inventory in under 40 seconds. Cal Hacks 12.0.</p>
-                                <div class="project-tech">Computer Vision, Python</div>
-                                <div class="project-links">
-                                    <a href="https://github.com/Meron-Abera" class="project-link" aria-label="GitHub">GitHub</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="project-card">
-                            <div class="project-card-image">
-                                <img src="Images/developforgood.jpg" alt="3D Girls, Inc." />
-                            </div>
-                            <div class="project-card-body">
-                                <span class="project-label">Develop for Good</span>
-                                <h3 class="project-title">3D Girls, Inc.</h3>
-                                <p class="project-desc">Role-based user system and admin dashboard for a nonprofit supporting young women in STEM. React and Node.js.</p>
-                                <div class="project-tech">React, Node.js</div>
-                                <div class="project-links">
-                                    <a href="https://www.3dgirlsinc.org/" class="project-link project-link-external" aria-label="Visit">Visit</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="project-card">
-                            <div class="project-card-image">
-                                <img src="Images/Kibrework.png" alt="Kibrework" />
-                            </div>
-                            <div class="project-card-body">
-                                <span class="project-label">Featured Project</span>
-                                <h3 class="project-title">Kibrework</h3>
-                                <p class="project-desc">Responsive, mission-driven organizational website with donation and newsletter features.</p>
-                                <div class="project-tech">WordPress</div>
-                                <div class="project-links">
-                                    <a href="https://kibrework.org/" class="project-link project-link-external" aria-label="Visit">Visit</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="project-card">
-                            <div class="project-card-image">
-                                <img src="Images/mysteria.jpg" alt="Mysteria" />
-                            </div>
-                            <div class="project-card-body">
-                                <span class="project-label">Featured Project</span>
-                                <h3 class="project-title">Mysteria</h3>
-                                <p class="project-desc">Platform for table and event reservations, food ordering, and delivery with booking and order management.</p>
-                                <div class="project-tech">PHP, Node.js</div>
-                                <div class="project-links">
-                                    <a href="https://github.com/MysteriaRestrnt-SWEG2012-SecC-Gr2/phase-3" class="project-link" aria-label="GitHub">GitHub</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="project-card">
-                            <div class="project-card-image">
-                                <img src="Images/Attendance.png" alt="Scan2Mark" />
-                            </div>
-                            <div class="project-card-body">
-                                <span class="project-label">Featured Project</span>
-                                <h3 class="project-title">Scan2Mark</h3>
-                                <p class="project-desc">CNN-based facial recognition attendance system. Django backend, React.js frontend. Reduced fraud and manual errors.</p>
-                                <div class="project-tech">React.js, Django, Python, CNN</div>
-                                <div class="project-links">
-                                    <a href="https://github.com/Final-project-year5/Frontends" class="project-link" aria-label="GitHub">GitHub</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="project-card">
-                            <div class="project-card-image">
-                                <img src="Images/Homeheart Screenshot.png" alt="HomeHeart" />
-                            </div>
-                            <div class="project-card-body">
-                                <span class="project-label">Featured Project</span>
-                                <h3 class="project-title">HomeHeart</h3>
-                                <p class="project-desc">Mental health platform for immigrants. Language-based therapist matching, scheduling, and resource hub.</p>
-                                <div class="project-tech">Vite React.js, Express.js, Node.js, PostgreSQL</div>
-                                <div class="project-links">
-                                    <a href="https://github.com/Meron-Abera" class="project-link" aria-label="GitHub">GitHub</a>
-                                    <a href="https://homeheartui-wi1z.onrender.com/#/login" class="project-link project-link-external" aria-label="Live">Live</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="project-card">
-                            <div class="project-card-image">
-                                <img src="Images/hotel1.jpg" alt="Hotel Reservation" />
-                            </div>
-                            <div class="project-card-body">
-                                <span class="project-label">Featured Project</span>
-                                <h3 class="project-title">Hotel Reservation & Review System</h3>
-                                <p class="project-desc">Full-featured hotel booking with reservations, reviews, ratings, favorites, and booking history.</p>
-                                <div class="project-tech">React, Node.js, PostgreSQL</div>
-                                <div class="project-links">
-                                    <a href="https://github.com/USF-CS601-Fall25/final-project-Meron-Abera" class="project-link" aria-label="GitHub">GitHub</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="project-card">
-                            <div class="project-card-image">
-                                <img src="Images/resume.jpg" alt="Gamified Resume Builder" />
-                            </div>
-                            <div class="project-card-body">
-                                <span class="project-label">Featured Project</span>
-                                <h3 class="project-title">Gamified Resume Builder</h3>
-                                <p class="project-desc">Interactive resume builder with XP, levels, and progress indicators. Game-like experience.</p>
-                                <div class="project-tech">React, Node.js</div>
-                                <div class="project-links">
-                                    <a href="https://github.com/Gamified-resum-builder/gamified-resume-builder" class="project-link" aria-label="GitHub">GitHub</a>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </section>
+        <div class="content-container glass-card">
+          <div class="content-pad">
+            <section
+              id="skills"
+              class="section skills-section"
+              data-nav="skills"
+            >
+              <h2>Skills</h2>
+              <div class="skills-rows">
+                <div class="skills-row-group">
+                  <span class="skills-row-label">Programming languages</span>
+                  <div class="skills-cards-wrap">
+                    <span class="skill-card">HTML</span>
+                    <span class="skill-card">CSS</span>
+                    <span class="skill-card">JAVASCRIPT</span>
+                    <span class="skill-card">TYPESCRIPT</span>
+                    <span class="skill-card">PYTHON</span>
+                    <span class="skill-card">JAVA</span>
+                    <span class="skill-card">C++</span>
+                    <span class="skill-card">KOTLIN</span>
+                    <span class="skill-card">PHP</span>
+                    <span class="skill-card">SQL</span>
+                  </div>
+                </div>
+                <div class="skills-row-group">
+                  <span class="skills-row-label">Frameworks & tools</span>
+                  <div class="skills-cards-wrap">
+                    <span class="skill-card">REACT</span>
+                    <span class="skill-card">NEXT.JS</span>
+                    <span class="skill-card">NODE.JS</span>
+                    <span class="skill-card">EXPRESS</span>
+                    <span class="skill-card">DJANGO</span>
+                    <span class="skill-card">LARAVEL</span>
+                    <span class="skill-card">SPRING BOOT</span>
+                    <span class="skill-card">MONGODB</span>
+                    <span class="skill-card">POSTGRESQL</span>
+                    <span class="skill-card">GIT</span>
+                    <span class="skill-card">GITHUB</span>
+                    <span class="skill-card">AWS</span>
+                    <span class="skill-card">DOCKER</span>
+                    <span class="skill-card">FIGMA</span>
+                    <span class="skill-card">CI/CD</span>
+                    <span class="skill-card">AGILE</span>
+                  </div>
+                </div>
+                <div class="skills-row-group">
+                  <span class="skills-row-label">AI & ML</span>
+                  <div class="skills-cards-wrap">
+                    <span class="skill-card">TENSORFLOW</span>
+                    <span class="skill-card">PYTORCH</span>
+                    <span class="skill-card">SCIKIT-LEARN</span>
+                    <span class="skill-card">NLP</span>
+                    <span class="skill-card">COMPUTER VISION</span>
+                    <span class="skill-card">OCR</span>
+                    <span class="skill-card">CNN</span>
+                    <span class="skill-card">STATISTICAL MODELING</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
 
-                <!-- Affiliations & Certificates -->
-                <section id="affiliations" class="section affiliations-section" data-nav="affiliations">
-                    <h2>Affiliations & Certificates</h2>
-                    <p class="affiliations-subtitle">Volunteer work, mentorship, and recognition.</p>
-                    <div class="affiliations-bg" aria-hidden="true">
-                        <span class="affiliations-speck affiliations-speck-1"></span>
-                        <span class="affiliations-speck affiliations-speck-2"></span>
-                        <span class="affiliations-speck affiliations-speck-3"></span>
-                        <span class="affiliations-speck affiliations-speck-4"></span>
-                        <span class="affiliations-speck affiliations-speck-5"></span>
+        <main>
+          <!-- 3. Experience -->
+          <section
+            id="experience"
+            class="section experience-section"
+            data-nav="experience"
+          >
+            <div class="experience-container glass-card">
+              <div class="experience-bg" aria-hidden="true">
+                <span class="experience-speck experience-speck-1"></span>
+                <span class="experience-speck experience-speck-2"></span>
+                <span class="experience-speck experience-speck-3"></span>
+                <span class="experience-speck experience-speck-4"></span>
+                <span class="experience-speck experience-speck-5"></span>
+                <span class="experience-speck experience-speck-6"></span>
+                <span class="experience-speck experience-speck-7"></span>
+                <span class="experience-speck experience-speck-8"></span>
+                <span class="experience-speck experience-speck-9"></span>
+                <span class="experience-speck experience-speck-10"></span>
+                <span class="experience-speck experience-speck-11"></span>
+                <span class="experience-speck experience-speck-12"></span>
+                <span class="experience-speck experience-speck-13"></span>
+                <span class="experience-speck experience-speck-14"></span>
+                <span class="experience-speck experience-speck-15"></span>
+                <span class="experience-speck experience-speck-16"></span>
+                <span class="experience-speck experience-speck-17"></span>
+                <span class="experience-speck experience-speck-18"></span>
+                <span class="experience-speck experience-speck-19"></span>
+                <span class="experience-speck experience-speck-20"></span>
+                <span class="experience-speck experience-speck-21"></span>
+                <span class="experience-speck experience-speck-22"></span>
+                <span class="experience-speck experience-speck-23"></span>
+                <span class="experience-speck experience-speck-24"></span>
+              </div>
+              <div class="work-section">
+                <h2 class="work-title">Work Experience</h2>
+                <div class="work-entries">
+                  <article class="work-entry">
+                    <div class="work-col work-dates">
+                      <span class="work-date-range">Aug 2025 – Present</span>
+                      <span class="work-duration">Ongoing</span>
                     </div>
-                    <div class="timeline">
-                        <article class="timeline-item" data-delay="0">
-                            <div class="timeline-date">Oct 2024 – Feb 2025</div>
-                            <div class="timeline-node"></div>
-                            <div class="timeline-content glass-card">
-                                <span class="timeline-label">Volunteer</span>
-                                <h3 class="timeline-title">Volunteer Developer — Develop for Good (3D Girls, Inc.)</h3>
-                                <p class="timeline-location">Remote</p>
-                                <ul class="timeline-list">
-                                    <li>Built role-based user systems and admin dashboards</li>
-                                    <li>Implemented frontend and backend features (React, Node.js)</li>
-                                    <li>Designed scalable user flows with nonprofit stakeholders</li>
-                                </ul>
-                            </div>
-                        </article>
-                        <!-- <article class="timeline-item" data-delay="1">
+                    <div class="work-col work-company">
+                      <strong>USFMobile.</strong>
+                      <span>San Francisco, CA</span>
+                    </div>
+                    <div class="work-col work-details">
+                      <strong>Software Developer</strong>
+                      <span class="work-tech"
+                        >React, TypeScript, Node.js, REST APIs</span
+                      >
+                      <ul class="work-bullets">
+                        <li>
+                          Implemented full-stack features for a production
+                          university mobile platform supporting 8,000+ students
+                          across academic and administrative services.
+                        </li>
+                        <li>
+                          Integrated and refactored backend services and APIs,
+                          participating in code reviews to reduce duplicated
+                          client logic and improve deployment reliability.
+                        </li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="work-entry">
+                    <div class="work-col work-dates">
+                      <span class="work-date-range">June 2024 – May 2025</span>
+                      <span class="work-duration">1 Year</span>
+                    </div>
+                    <div class="work-col work-company">
+                      <strong>Huawei Technologies PLC.</strong>
+                      <span>Addis Ababa</span>
+                    </div>
+                    <div class="work-col work-details">
+                      <strong>Software Engineer</strong>
+                      <span class="work-tech"
+                        >Spring Boot, Java, REST APIs, MySQL, Docker</span
+                      >
+                      <ul class="work-bullets">
+                        <li>
+                          Shipped Spring Boot integration APIs for Ethio
+                          Telecom's national network, supporting delivery and
+                          optimization of cloud and networking products.
+                        </li>
+                        <li>
+                          Enhanced back-end services for large-scale telecom
+                          infrastructure, improving API throughput and system
+                          latency, enabling 1.5x faster rollout.
+                        </li>
+                        <li>
+                          Optimized payment-gateway endpoints, increasing daily
+                          transaction volume by 3x and reducing settlement time
+                          by ~2 days.
+                        </li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="work-entry">
+                    <div class="work-col work-dates">
+                      <span class="work-date-range">Oct 2023 – April 2025</span>
+                      <span class="work-duration">1 Year 7 Months</span>
+                    </div>
+                    <div class="work-col work-company">
+                      <strong>TamaCares.</strong>
+                      <span>Alexandria, VA (Remote)</span>
+                    </div>
+                    <div class="work-col work-details">
+                      <strong>Software Developer (Part-Time)</strong>
+                      <span class="work-tech"
+                        >Next.js, PostgreSQL, Express, AI/NLP, OCR</span
+                      >
+                      <ul class="work-bullets">
+                        <li>
+                          Deployed full-stack web app to digitalize patient
+                          prescription requests, reducing paperwork by 80% with
+                          ~95% test coverage.
+                        </li>
+                        <li>
+                          Engineered CRM analytics dashboard for order
+                          management, reducing order lifetime by 66% and cutting
+                          CRM license costs by 100%.
+                        </li>
+                        <li>
+                          Integrated AI agents, NLP, and finetuned OCR models to
+                          extract medical details from handwritten prescriptions
+                          with 78% accuracy.
+                        </li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="work-entry">
+                    <div class="work-col work-dates">
+                      <span class="work-date-range">Dec 2023 – May 2024</span>
+                      <span class="work-duration">6 Months</span>
+                    </div>
+                    <div class="work-col work-company">
+                      <strong>Venuine.</strong>
+                      <span>Remote</span>
+                    </div>
+                    <div class="work-col work-details">
+                      <strong>Freelance Event Management Developer</strong>
+                      <span class="work-tech"
+                        >React, Node.js, Stripe, PostgreSQL</span
+                      >
+                      <ul class="work-bullets">
+                        <li>
+                          Built venue reservation and event management system
+                          with real-time availability tracking, event hosting,
+                          and role-based access.
+                        </li>
+                        <li>
+                          Integrated Stripe for payment processing and added
+                          self-serve settings dashboard, reducing manual admin
+                          tasks.
+                        </li>
+                        <li>
+                          Designed double-booking-proof systems for long-term
+                          scalability.
+                        </li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="work-entry">
+                    <div class="work-col work-dates">
+                      <span class="work-date-range">June 2024 – Sep 2024</span>
+                      <span class="work-duration">4 Months</span>
+                    </div>
+                    <div class="work-col work-company">
+                      <strong>Huawei Technologies PLC.</strong>
+                      <span>Addis Ababa</span>
+                    </div>
+                    <div class="work-col work-details">
+                      <strong>Software Delivery Engineer (Intern)</strong>
+                      <span class="work-tech"
+                        >Java, Telecom Systems, Cloud</span
+                      >
+                      <ul class="work-bullets">
+                        <li>
+                          Interned on Software Maintenance Team supporting Ethio
+                          Telecom's core systems.
+                        </li>
+                        <li>
+                          Implemented customized software solutions for telecom
+                          clients and optimized system integrations.
+                        </li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article class="work-entry">
+                    <div class="work-col work-dates">
+                      <span class="work-date-range">July 2023 – Oct 2023</span>
+                      <span class="work-duration">4 Months</span>
+                    </div>
+                    <div class="work-col work-company">
+                      <strong>Micro Sun and Solution P.L.C.</strong>
+                      <span>Addis Ababa</span>
+                    </div>
+                    <div class="work-col work-details">
+                      <strong>Backend Developer Intern</strong>
+                      <span class="work-tech"
+                        >Node.js, Chapa API, PostgreSQL</span
+                      >
+                      <ul class="work-bullets">
+                        <li>
+                          Led the development of a tender-matching platform
+                          using Laravel and React.js, resulting in a 3x increase
+                          in operational efficiency and simplified platform
+                          oversight.
+                        </li>
+                        <li>
+                          Integrated manual payment system with Chapa to
+                          automate transactions and reduce processing times by
+                          ⅔.
+                        </li>
+                        <li>
+                          Optimized API endpoints using advanced data
+                          structures, enhancing interoperability between
+                          distributed components.
+                        </li>
+                      </ul>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="journey-section">
+                <h2 class="journey-title">Journey</h2>
+                <p class="journey-intro">
+                  From backend intern to full-stack developer, I've built
+                  production systems across healthcare, telecom, and edtech. I
+                  focus on scalable APIs, AI-powered workflows, and reducing
+                  manual work through automation, whether optimizing payment
+                  gateways or extracting data from handwritten prescriptions.
+                </p>
+                <div class="journey-cards">
+                  <div class="journey-card">
+                    <span class="journey-year">2025</span>
+                    <strong class="journey-role"
+                      >{ Software Developer, USF }</strong
+                    >
+                    <p>
+                      Leading full-stack development for a university mobile
+                      platform serving 8,000+ students. Refactoring backend
+                      services and APIs to improve deployment reliability and
+                      reduce duplicated logic across the platform.
+                    </p>
+                  </div>
+                  <div class="journey-card">
+                    <span class="journey-year">2023</span>
+                    <strong class="journey-role"
+                      >{ Backend Intern → Full-Stack Developer }</strong
+                    >
+                    <p>
+                      Started at Micro Sun building tender-matching algorithms
+                      and payment integrations. Joined TamaCares part-time to
+                      ship a Next.js/Postgres app and AI-powered OCR pipeline,
+                      cutting prescription paperwork by 80%.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 5. Projects -->
+          <section
+            id="projects"
+            class="section projects-section"
+            data-nav="projects"
+          >
+            <h2>Projects</h2>
+            <p class="projects-subtitle">
+              Discover how ideas become impactful solutions.
+            </p>
+            <div class="projects-gallery">
+              <article class="project-card">
+                <div class="project-card-image">
+                  <img
+                    src="Images/smartmarket.jpg"
+                    alt="Smart Farm Marketplace"
+                  />
+                </div>
+                <div class="project-card-body">
+                  <span class="project-label">Featured Project</span>
+                  <h3 class="project-title">Smart Farm Marketplace</h3>
+                  <p class="project-desc">
+                    Computer vision system processing smart-scale sensor data to
+                    identify produce and sync inventory in under 40 seconds. Cal
+                    Hacks 12.0.
+                  </p>
+                  <div class="project-tech">Computer Vision, Python</div>
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/Meron-Abera"
+                      class="project-link"
+                      aria-label="GitHub"
+                      >GitHub</a
+                    >
+                  </div>
+                </div>
+              </article>
+              <article class="project-card">
+                <div class="project-card-image">
+                  <img src="Images/developforgood.jpg" alt="3D Girls, Inc." />
+                </div>
+                <div class="project-card-body">
+                  <span class="project-label">Develop for Good</span>
+                  <h3 class="project-title">3D Girls, Inc.</h3>
+                  <p class="project-desc">
+                    Role-based user system and admin dashboard for a nonprofit
+                    supporting young women in STEM. React and Node.js.
+                  </p>
+                  <div class="project-tech">React, Node.js</div>
+                  <div class="project-links">
+                    <a
+                      href="https://www.3dgirlsinc.org/"
+                      class="project-link project-link-external"
+                      aria-label="Visit"
+                      >Visit</a
+                    >
+                  </div>
+                </div>
+              </article>
+              <article class="project-card">
+                <div class="project-card-image">
+                  <img src="Images/Kibrework.png" alt="Kibrework" />
+                </div>
+                <div class="project-card-body">
+                  <span class="project-label">Featured Project</span>
+                  <h3 class="project-title">Kibrework</h3>
+                  <p class="project-desc">
+                    Responsive, mission-driven organizational website with
+                    donation and newsletter features.
+                  </p>
+                  <div class="project-tech">WordPress</div>
+                  <div class="project-links">
+                    <a
+                      href="https://kibrework.org/"
+                      class="project-link project-link-external"
+                      aria-label="Visit"
+                      >Visit</a
+                    >
+                  </div>
+                </div>
+              </article>
+              <article class="project-card">
+                <div class="project-card-image">
+                  <img src="Images/mysteria.jpg" alt="Mysteria" />
+                </div>
+                <div class="project-card-body">
+                  <span class="project-label">Featured Project</span>
+                  <h3 class="project-title">Mysteria</h3>
+                  <p class="project-desc">
+                    Platform for table and event reservations, food ordering,
+                    and delivery with booking and order management.
+                  </p>
+                  <div class="project-tech">PHP, Node.js</div>
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/MysteriaRestrnt-SWEG2012-SecC-Gr2/phase-3"
+                      class="project-link"
+                      aria-label="GitHub"
+                      >GitHub</a
+                    >
+                  </div>
+                </div>
+              </article>
+              <article class="project-card">
+                <div class="project-card-image">
+                  <img src="Images/Attendance.png" alt="Scan2Mark" />
+                </div>
+                <div class="project-card-body">
+                  <span class="project-label">Featured Project</span>
+                  <h3 class="project-title">Scan2Mark</h3>
+                  <p class="project-desc">
+                    CNN-based facial recognition attendance system. Django
+                    backend, React.js frontend. Reduced fraud and manual errors.
+                  </p>
+                  <div class="project-tech">React.js, Django, Python, CNN</div>
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/Final-project-year5/Frontends"
+                      class="project-link"
+                      aria-label="GitHub"
+                      >GitHub</a
+                    >
+                  </div>
+                </div>
+              </article>
+              <article class="project-card">
+                <div class="project-card-image">
+                  <img src="Images/Homeheart Screenshot.png" alt="HomeHeart" />
+                </div>
+                <div class="project-card-body">
+                  <span class="project-label">Featured Project</span>
+                  <h3 class="project-title">HomeHeart</h3>
+                  <p class="project-desc">
+                    Mental health platform for immigrants. Language-based
+                    therapist matching, scheduling, and resource hub.
+                  </p>
+                  <div class="project-tech">
+                    Vite React.js, Express.js, Node.js, PostgreSQL
+                  </div>
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/Meron-Abera"
+                      class="project-link"
+                      aria-label="GitHub"
+                      >GitHub</a
+                    >
+                    <a
+                      href="https://homeheartui-wi1z.onrender.com/#/login"
+                      class="project-link project-link-external"
+                      aria-label="Live"
+                      >Live</a
+                    >
+                  </div>
+                </div>
+              </article>
+              <article class="project-card">
+                <div class="project-card-image">
+                  <img src="Images/hotel1.jpg" alt="Hotel Reservation" />
+                </div>
+                <div class="project-card-body">
+                  <span class="project-label">Featured Project</span>
+                  <h3 class="project-title">
+                    Hotel Reservation & Review System
+                  </h3>
+                  <p class="project-desc">
+                    Full-featured hotel booking with reservations, reviews,
+                    ratings, favorites, and booking history.
+                  </p>
+                  <div class="project-tech">React, Node.js, PostgreSQL</div>
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/USF-CS601-Fall25/final-project-Meron-Abera"
+                      class="project-link"
+                      aria-label="GitHub"
+                      >GitHub</a
+                    >
+                  </div>
+                </div>
+              </article>
+              <article class="project-card">
+                <div class="project-card-image">
+                  <img src="Images/resume.jpg" alt="Gamified Resume Builder" />
+                </div>
+                <div class="project-card-body">
+                  <span class="project-label">Featured Project</span>
+                  <h3 class="project-title">Gamified Resume Builder</h3>
+                  <p class="project-desc">
+                    Interactive resume builder with XP, levels, and progress
+                    indicators. Game-like experience.
+                  </p>
+                  <div class="project-tech">React, Node.js</div>
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/Gamified-resum-builder/gamified-resume-builder"
+                      class="project-link"
+                      aria-label="GitHub"
+                      >GitHub</a
+                    >
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <!-- Affiliations & Certificates -->
+          <section
+            id="affiliations"
+            class="section affiliations-section"
+            data-nav="affiliations"
+          >
+            <h2>Affiliations & Certificates</h2>
+            <p class="affiliations-subtitle">
+              Volunteer work, mentorship, and recognition.
+            </p>
+            <div class="affiliations-bg" aria-hidden="true">
+              <span class="affiliations-speck affiliations-speck-1"></span>
+              <span class="affiliations-speck affiliations-speck-2"></span>
+              <span class="affiliations-speck affiliations-speck-3"></span>
+              <span class="affiliations-speck affiliations-speck-4"></span>
+              <span class="affiliations-speck affiliations-speck-5"></span>
+            </div>
+            <div class="timeline">
+              <article class="timeline-item" data-delay="0">
+                <div class="timeline-date">Oct 2024 – Feb 2025</div>
+                <div class="timeline-node"></div>
+                <div class="timeline-content glass-card">
+                  <span class="timeline-label">Volunteer</span>
+                  <h3 class="timeline-title">
+                    Volunteer Developer — Develop for Good (3D Girls, Inc.)
+                  </h3>
+                  <p class="timeline-location">Remote</p>
+                  <ul class="timeline-list">
+                    <li>Built role-based user systems and admin dashboards</li>
+                    <li>
+                      Implemented frontend and backend features (React, Node.js)
+                    </li>
+                    <li>
+                      Designed scalable user flows with nonprofit stakeholders
+                    </li>
+                  </ul>
+                </div>
+              </article>
+              <!-- <article class="timeline-item" data-delay="1">
                             <div class="timeline-date">2023</div>
                             <div class="timeline-node"></div>
                             <div class="timeline-content glass-card">
@@ -455,78 +687,116 @@
                                 </ul>
                             </div>
                         </article> -->
-                        <article class="timeline-item" data-delay="2">
-                            <div class="timeline-date">2022 – 2024</div>
-                            <div class="timeline-node"></div>
-                            <div class="timeline-content glass-card">
-                                <span class="timeline-label">Mentorship</span>
-                                <h3 class="timeline-title">Mentor — AASTU Google Developer Clubs (GDC)</h3>
-                                <p class="timeline-location">Addis Ababa</p>
-                                <ul class="timeline-list">
-                                    <li>Mentored peers in web development and interview prep</li>
-                                    <li>Led workshops and project-based sessions</li>
-                                </ul>
-                            </div>
-                        </article>
-                        <article class="timeline-item" data-delay="3">
-                            <div class="timeline-date">Jul 2024 – Present</div>
-                            <div class="timeline-node"></div>
-                            <div class="timeline-content glass-card">
-                                <span class="timeline-label">Member</span>
-                                <h3 class="timeline-title">Member — RTC (Rewriting the Code), Baddies in Tech</h3>
-                                <p class="timeline-location">Remote</p>
-                                
-                            </div>
-                        </article>
-                        <article class="timeline-item timeline-item-award" data-delay="4">
-                            <div class="timeline-date">Nov 2024</div>
-                            <div class="timeline-node timeline-node-award"></div>
-                            <div class="timeline-content glass-card timeline-content-award">
-                                <span class="timeline-label timeline-label-award">Award</span>
-                                <h3 class="timeline-title">Government-Endorsed Academic Excellence Award</h3>
-                                <p class="timeline-location">Addis Ababa City Government Bureau of Women, Children & Social Affairs</p>
-                                <p class="timeline-desc">Awarded for outstanding academic performance.</p>
-                            </div>
-                        </article>
-                    </div>
-                </section>
+              <article class="timeline-item" data-delay="2">
+                <div class="timeline-date">2022 – 2024</div>
+                <div class="timeline-node"></div>
+                <div class="timeline-content glass-card">
+                  <span class="timeline-label">Mentorship</span>
+                  <h3 class="timeline-title">
+                    Mentor — AASTU Google Developer Clubs (GDC)
+                  </h3>
+                  <p class="timeline-location">Addis Ababa</p>
+                  <ul class="timeline-list">
+                    <li>
+                      Mentored peers in web development and interview prep
+                    </li>
+                    <li>Led workshops and project-based sessions</li>
+                  </ul>
+                </div>
+              </article>
+              <article class="timeline-item" data-delay="3">
+                <div class="timeline-date">Jul 2024 – Present</div>
+                <div class="timeline-node"></div>
+                <div class="timeline-content glass-card">
+                  <span class="timeline-label">Member</span>
+                  <h3 class="timeline-title">
+                    Member — RTC (Rewriting the Code), Baddies in Tech
+                  </h3>
+                  <p class="timeline-location">Remote</p>
+                </div>
+              </article>
+              <article class="timeline-item timeline-item-award" data-delay="4">
+                <div class="timeline-date">Nov 2024</div>
+                <div class="timeline-node timeline-node-award"></div>
+                <div class="timeline-content glass-card timeline-content-award">
+                  <span class="timeline-label timeline-label-award">Award</span>
+                  <h3 class="timeline-title">
+                    Government-Endorsed Academic Excellence Award
+                  </h3>
+                  <p class="timeline-location">
+                    Addis Ababa City Government Bureau of Women, Children &
+                    Social Affairs
+                  </p>
+                  <p class="timeline-desc">
+                    Awarded for outstanding academic performance.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </section>
 
-                <!-- Interests -->
-                <section id="interests" class="section interests-section" data-nav="interests">
-                    <h2>Interests</h2>
-                    <div class="interests-grid">
-                        <article class="interest-card glass-card">
-                            <h4 class="interest-card-title">Technology</h4>
-                            <p>AI/ML, developer tools, open source, and scalable systems.</p>
-                        </article>
-                        <article class="interest-card glass-card">
-                            <h4 class="interest-card-title">Learning</h4>
-                            <p>Mentorship, technical writing, and bridging education gaps.</p>
-                        </article>
-                        <article class="interest-card glass-card">
-                            <h4 class="interest-card-title">Community</h4>
-                            <p>Inclusive tech communities, women in STEM, and collaborative projects.</p>
-                        </article>
-                    </div>
-                </section>
+          <!-- Interests -->
+          <section
+            id="interests"
+            class="section interests-section"
+            data-nav="interests"
+          >
+            <h2>Interests</h2>
+            <div class="interests-grid">
+              <article class="interest-card glass-card">
+                <h4 class="interest-card-title">Technology</h4>
+                <p>
+                  AI/ML, developer tools, open source, and scalable systems.
+                </p>
+              </article>
+              <article class="interest-card glass-card">
+                <h4 class="interest-card-title">Learning</h4>
+                <p>
+                  Mentorship, technical writing, and bridging education gaps.
+                </p>
+              </article>
+              <article class="interest-card glass-card">
+                <h4 class="interest-card-title">Community</h4>
+                <p>
+                  Inclusive tech communities, women in STEM, and collaborative
+                  projects.
+                </p>
+              </article>
+            </div>
+          </section>
 
-                <!-- 6. Contact -->
-                <section id="contact" class="section" data-nav="contact">
-                    <h2>Contact</h2>
-                    <ul>
-                        <li>Email: <a href="mailto:mshibiru@dons.usfca.edu">mshibiru@dons.usfca.edu</a></li>
-                        <li>GitHub: <a href="https://github.com/Meron-Abera">github.com/Meron-Abera</a></li>
-                        <li>LinkedIn: <a href="https://www.linkedin.com/in/meron-a-shibiru/">linkedin.com/in/meron-a-shibiru</a></li>
-                    </ul>
-                </section>
-            </main>
+          <!-- 6. Contact -->
+          <section id="contact" class="section" data-nav="contact">
+            <h2>Contact</h2>
+            <ul>
+              <li>
+                Email:
+                <a href="mailto:mshibiru@dons.usfca.edu"
+                  >mshibiru@dons.usfca.edu</a
+                >
+              </li>
+              <li>
+                GitHub:
+                <a href="https://github.com/Meron-Abera"
+                  >github.com/Meron-Abera</a
+                >
+              </li>
+              <li>
+                LinkedIn:
+                <a href="https://www.linkedin.com/in/meron-a-shibiru/"
+                  >linkedin.com/in/meron-a-shibiru</a
+                >
+              </li>
+            </ul>
+          </section>
+        </main>
 
-            <footer>
-                <p>Meron Shibiru — Software Engineer</p>
-            </footer>
-        </div>
+        <footer>
+          <p>Meron Shibiru — Software Engineer</p>
+        </footer>
+      </div>
     </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
