@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/Meron-Abera/Meron-Abera.github.io/compare/v1.2.0...v1.2.1) (2026-02-07)
+
+
+### Bug Fixes
+
+* wording update in index.html ([bc063a1](https://github.com/Meron-Abera/Meron-Abera.github.io/commit/bc063a100584f4a3f8335014af374706aeb93282))
+
 # [1.2.0](https://github.com/Meron-Abera/Meron-Abera.github.io/compare/v1.1.0...v1.2.0) (2026-02-07)
 
 
