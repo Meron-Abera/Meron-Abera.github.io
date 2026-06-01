@@ -132,32 +132,38 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--space-3xl);
+  gap: var(--space-lg);
   z-index: 100;
-  height: 70vh;
-  justify-content: space-evenly;
+  max-height: 90vh;
+  justify-content: center;
+  padding: var(--space-md) 0;
 }
 
 .page-nav-right a {
   position: relative;
+  display: block;
+  flex-shrink: 0;
   color: var(--color-text-muted);
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 600;
-  transform: rotate(90deg);
-  transform-origin: center center;
-  letter-spacing: 0.1em;
-  transition: all var(--transition-fast);
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  white-space: nowrap;
+  letter-spacing: 0.12em;
+  line-height: 1;
+  padding: var(--space-xs) var(--space-sm);
+  transition: color var(--transition-fast);
 }
 
 .page-nav-right a::before {
   content: '';
   position: absolute;
   left: 50%;
-  bottom: -3rem;
+  bottom: calc(-1 * var(--space-lg) + 2px);
   transform: translateX(-50%);
   width: 1px;
-  height: 2rem;
+  height: calc(var(--space-lg) - 4px);
   background: var(--color-border);
   opacity: 0.4;
 }
@@ -168,7 +174,6 @@ body {
 
 .page-nav-right a:hover {
   color: var(--color-text);
-  transform: rotate(90deg) scale(1.05);
 }
 
 .page-nav-right a.active {
@@ -1359,6 +1364,8 @@ main {
 .affiliations-section.in-view .timeline-item[data-delay="2"] { transition-delay: 160ms; }
 .affiliations-section.in-view .timeline-item[data-delay="3"] { transition-delay: 240ms; }
 .affiliations-section.in-view .timeline-item[data-delay="4"] { transition-delay: 320ms; }
+.affiliations-section.in-view .timeline-item[data-delay="5"] { transition-delay: 400ms; }
+.affiliations-section.in-view .timeline-item[data-delay="6"] { transition-delay: 480ms; }
 
 .timeline-item:last-child {
   padding-bottom: 0;
@@ -1425,6 +1432,220 @@ main {
   border-color: rgba(201, 160, 220, 0.25);
   box-shadow: 0 8px 32px rgba(201, 160, 220, 0.1);
   transform: translateX(4px);
+}
+
+.timeline-image {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  max-height: 110px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: var(--radius-md);
+  margin: 0 auto var(--space-md);
+  border: 1px solid var(--glass-border);
+}
+
+/* Hult Prize — side-by-side image + text (like hero) */
+.hult-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+@media (min-width: 768px) {
+  .hult-row {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: var(--space-xl);
+  }
+}
+
+.hult-row-media {
+  flex-shrink: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 200px;
+}
+
+.timeline-image-hult {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  max-height: 260px;
+  height: auto;
+  object-fit: contain;
+  object-position: center top;
+  margin: 0;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--glass-border);
+}
+
+.hult-row-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.hult-row-body .timeline-label {
+  margin-top: 0;
+}
+
+.affiliations-flow {
+  position: relative;
+  z-index: 1;
+}
+
+/* Education */
+.education-subtitle {
+  color: var(--color-text-muted);
+  margin: 0 0 var(--space-xl);
+}
+
+.education-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+}
+
+@media (min-width: 768px) {
+  .education-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .education-card-wide {
+    grid-column: 1 / -1;
+  }
+}
+
+.education-card {
+  padding: var(--space-xl);
+  border-radius: var(--radius-lg);
+}
+
+.education-date {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-accent);
+  margin-bottom: var(--space-sm);
+}
+
+.education-title {
+  margin: 0 0 var(--space-xs);
+  font-size: 1.125rem;
+  color: var(--color-text);
+}
+
+.education-school {
+  margin: 0 0 var(--space-md);
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+.education-desc {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+
+.education-courses {
+  margin: 0;
+  padding-left: 1.25rem;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+.education-courses li {
+  margin-bottom: var(--space-xs);
+}
+
+/* Certificates — single award card, images ~85% of card area */
+.timeline-item-certs .timeline-content-award {
+  padding: var(--space-lg) var(--space-xl);
+}
+
+.timeline-item-certs .timeline-content-award .timeline-label {
+  margin-bottom: var(--space-md);
+}
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-xl);
+  width: 100%;
+  align-items: stretch;
+  min-height: 280px;
+}
+
+.certificate-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 0;
+}
+
+.certificate-image-wrap {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 85%;
+  min-height: 220px;
+  max-height: 320px;
+  margin: 0 auto var(--space-md);
+  padding: var(--space-xs);
+  border-radius: var(--radius-md);
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--glass-border);
+}
+
+.certificate-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center;
+  margin: 0;
+  border: none;
+  border-radius: var(--radius-sm);
+}
+
+.certificate-title {
+  flex-shrink: 0;
+  margin: 0 0 var(--space-xs);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-text);
+  line-height: 1.3;
+}
+
+.certificate-meta {
+  flex-shrink: 0;
+  margin: 0;
+  font-size: 0.7rem;
+  color: var(--color-text-muted);
+  line-height: 1.35;
+}
+
+@media (max-width: 640px) {
+  .certificates-grid {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+
+  .certificate-image-wrap {
+    width: 90%;
+    min-height: 200px;
+    max-height: 280px;
+  }
 }
 
 .timeline-content-award {
@@ -1553,6 +1774,12 @@ main {
   .interests-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: var(--space-xl);
+  }
+}
+
+@media (min-width: 1200px) {
+  .interests-grid {
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 
