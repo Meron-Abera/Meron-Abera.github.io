@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.3.0](https://github.com/Meron-Abera/Meron-Abera.github.io/compare/v1.2.1...v1.3.0) (2026-06-01)
+
+
+### Features
+
+* expand portfolio with CerberOS, education, and affiliations ([284c883](https://github.com/Meron-Abera/Meron-Abera.github.io/commit/284c883e3d17b1dc390f46fe7ce5076a79d7ddd9))
+
 ## [1.2.1](https://github.com/Meron-Abera/Meron-Abera.github.io/compare/v1.2.0...v1.2.1) (2026-02-07)
 
 
